@@ -38,7 +38,6 @@ const GMap: FC = () => {
 
 		service.nearbySearch(request, (results, status) => {
 			if (status === google.maps.places.PlacesServiceStatus.OK) {
-				console.log(results)
 				setHospitals(results);
 			}
 		});
@@ -70,7 +69,6 @@ const GMap: FC = () => {
 			{/* Child components, such as markers, info windows, etc. */}
 			<Marker position={{ lat: marker.lat, lng: marker.lng }} />
 			{hospitals && hospitals.map((hospital: any) => {
-				console.log(hospital.name);
 				return <Marker key={hospital.id} position={{lat: hospital.geometry.location.lat(), lng: hospital.geometry.location.lng()}} icon={{
 					url: '/caduceus.svg',
 					scaledSize: new window.google.maps.Size(30, 30),
