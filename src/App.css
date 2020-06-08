@@ -1,14 +1,5 @@
 @import '~antd/dist/antd.css';
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -37,4 +28,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pt {
+  padding-top: 20px;
+}
+
+.pb {
+  padding-bottom: 20px;
+}
+
+.p-y {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p-y-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.logo {
+  font-size: x-large;
+  margin-left: 40px;
+}
+
+.search input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
 }
