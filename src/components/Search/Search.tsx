@@ -2,7 +2,6 @@ import React from 'react';
 import usePlacesAutoComplete, {
 	getGeocode,
 	getLatLng,
-	LatLng,
 } from 'use-places-autocomplete';
 
 import {
@@ -24,7 +23,7 @@ const Search = () => {
 		clearSuggestions,
 	} = usePlacesAutoComplete({
 		requestOptions: {
-			location: { lat: () => 6.4474, lng: () => 3.3903 } as LatLng,
+			location: { lat: () => 6.4474, lng: () => 3.3903 } as any,
 			radius: 200 * 1000,
 		},
 	});
